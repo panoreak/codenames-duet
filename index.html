@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/scripts.js" type="module"></script>
         <header>
             <h1 id="header" class="centered">&#128269; Codenames Duet</h1>
         </header>
@@ -28,6 +28,16 @@
                 <p>Hello!</br>Which player are you?</p>
                 <button id="player1Button" type="button">Player 1</button>
                 <button id="player2Button" type="button">Player 2</button>
+            </div>
+
+            <div id="player1SeedInput" class="hidden">
+                <p>Welcome!</br></br>Please give the following game seed to player 2:</br><span id="seed"></span></p>
+            </div>
+
+            <div id="player2SeedInput" class="hidden">
+                <p>Welcome!</br>Please enter player 1's game seed:</p>
+                    <input id="seedInput" type="text"><br><br>
+                    <input id="seedSubmit" type="submit" value="Submit">
             </div>
         </div>
 
